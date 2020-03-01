@@ -47,7 +47,7 @@ def get_class(id):
     return abort(404)
 
 
-@app.route('/classes/<int:id>',methods = ['PUT'])
+@app.route('/classes/<int:id>',methods = ['PATCH'])
 def patch_class(id):
     req = request.json
     sid = req["student_id"]
